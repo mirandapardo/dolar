@@ -62,7 +62,7 @@ const Landing = () => {
                 onChange={modificaFechaInicio}
               />
             </div>
-            <div>
+            <div className={!fechaInicio && "hidden"}>
               <label>Fecha final</label>
               <input
                 type="date"
