@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "17fb13ca69b1928518f4849eb9375004",
+    "revision": "68a880fd66b634caed9e338792bbd1fd",
     "url": "/dolar/index.html"
   },
   {
-    "revision": "42c82361c43f09563d18",
+    "revision": "bdd774ebd0390aa3ef0c",
     "url": "/dolar/static/css/main.cde4ced2.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dolar/static/js/2.20fc8492.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "42c82361c43f09563d18",
-    "url": "/dolar/static/js/main.a2fd5e9e.chunk.js"
+    "revision": "bdd774ebd0390aa3ef0c",
+    "url": "/dolar/static/js/main.f26b83ec.chunk.js"
   },
   {
     "revision": "2ba6c476aeb5e2d79385",
