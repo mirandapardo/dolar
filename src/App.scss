@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+$app-bg: #c1bdba;
+$light-bg: lighten($app-bg, 45%);
+
+$form-bg: #13232f;
+$white: #ffffff;
+$medioblanco: #a0b3b0;
+
+$destacado: #1ab188;
+
+$bold: 600;
+$br: 4px;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background: linear-gradient(150deg, $app-bg, $light-bg);
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  min-width: 98vw;
+  color: $white;
+}
+.logo img {
+  position: relative;
+  text-align: center;
+  width: 150px;
+  margin-bottom: 1em;
+}
+.container {
+  background: rgba($form-bg, 0.9);
+  padding: 40px;
+  max-width: 85vw;
+  margin: 40px auto;
+  border-radius: $br;
+  box-shadow: 0 4px 10px 4px rgba($form-bg, 0.3);
+}
+
+.form {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  &:after {
+    display: table;
+    clear: both;
+  }
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  padding: 15px;
+  background: #1ab188;
+  color: #ffffff;
+  &:hover,
+  &:focus {
+    background: darken($destacado, 20%);
+  }
+}
+h1 {
+  text-align: center;
+  font-weight: $bold;
+  margin: 0 0 40px;
+}
+
+label {
+  color: $medioblanco;
+  transition: all 0.25s ease;
+}
+
+input {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid $medioblanco;
+  color: $white;
+  border-radius: 0;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  &:focus {
+    outline: 0;
+    border-color: $destacado;
+  }
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url(https://mywildalberta.ca/images/GFX-MWA-Parks-Reservations.png)
+    no-repeat;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+}
+
+.fechas {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  > div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.medidas {
+  display: flex;
+  text-align: center;
+  > .medida {
+    width: 33.333%;
+    margin: 10px 0;
+    border-right: 1px solid $medioblanco;
+    &:last-child {
+      border: none;
+    }
+    > .numero {
+      font-size: 2em;
+      color: $destacado;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+.loading {
+  text-align: center;
+  &:after {
+    content: " .";
+    animation: dots 1s steps(5, end) infinite;
+  }
+}
+
+@keyframes dots {
+  0%,
+  20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  40% {
+    color: white;
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  60% {
+    text-shadow: 0.25em 0 0 white, 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  80%,
+  100% {
+    text-shadow: 0.25em 0 0 white, 0.5em 0 0 white;
+  }
+}

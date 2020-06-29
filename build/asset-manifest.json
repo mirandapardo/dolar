@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dolar/static/css/main.cde4ced2.chunk.css",
+    "main.js": "/dolar/static/js/main.a2fd5e9e.chunk.js",
+    "main.js.map": "/dolar/static/js/main.a2fd5e9e.chunk.js.map",
+    "runtime-main.js": "/dolar/static/js/runtime-main.96814b29.js",
+    "runtime-main.js.map": "/dolar/static/js/runtime-main.96814b29.js.map",
+    "static/js/2.20fc8492.chunk.js": "/dolar/static/js/2.20fc8492.chunk.js",
+    "static/js/2.20fc8492.chunk.js.map": "/dolar/static/js/2.20fc8492.chunk.js.map",
+    "index.html": "/dolar/index.html",
+    "precache-manifest.df160c6ee234e45e0d17bce7e791efdf.js": "/dolar/precache-manifest.df160c6ee234e45e0d17bce7e791efdf.js",
+    "service-worker.js": "/dolar/service-worker.js",
+    "static/css/main.cde4ced2.chunk.css.map": "/dolar/static/css/main.cde4ced2.chunk.css.map",
+    "static/js/2.20fc8492.chunk.js.LICENSE.txt": "/dolar/static/js/2.20fc8492.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/dolar/static/media/logo.48d23102.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.96814b29.js",
+    "static/js/2.20fc8492.chunk.js",
+    "static/css/main.cde4ced2.chunk.css",
+    "static/js/main.a2fd5e9e.chunk.js"
+  ]
+}
